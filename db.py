@@ -1,9 +1,5 @@
 import mysql.connector
+from config import DB_CONFIG
 
 def get_connection():
-    return mysql.connector.connect(
-        host= "localhost",
-        user = "root",
-        password = "Maninder@0911",
-        database = "sales_dashboard"
-    )
+    return mysql.connector.connect(**DB_CONFIG)

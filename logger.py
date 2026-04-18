@@ -1,5 +1,6 @@
 import logging
 import os
+from config import LOG_FOLDER, LOG_FILE
 
 LOG_FOLDER = "logs"
 LOG_FILE = "organizer.log"
